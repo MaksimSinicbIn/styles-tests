@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff; /* Белый текст */
+  background-color: #833ab4; /* Фиолетовый фон */
+  outline: 2px solid #fff; /* Белая обводка */
+  padding: 30px 60px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s, background-color 1s; /* Анимация цвета текста и фона */
+  border: none;
+}
+
+.button:hover {
+  color: #833ab4; /* Фиолетовый текст при ховере */
+  background-color: #fff; /* Белый фон при ховере */
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Начинаем за пределами кнопки */
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Белый цвет для анимации */
+  transform: skewX(-45deg); /* Наклон по диагонали */
+  z-index: 0;
+  transition: left 1s; /* Анимация движения */
+}
+
+.button:hover::before {
+  left: 100%; /* Заканчиваем за пределами кнопки */
+}
