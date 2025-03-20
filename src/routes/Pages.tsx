@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router'
 import { Error404 } from './pages/Error404'
-import { Button } from '@/components/Button/Button'
 import { HomePage } from './pages/HomePage'
+import { ButtonExample } from '@/examples/ButtonExample/ButtonExample'
 
 export const PATH = {
   HOME: '/home',
@@ -15,7 +15,7 @@ export const Pages = () => {
       <Routes>
         <Route path="/" element={<Navigate to={PATH.HOME} />} />
         <Route path={PATH.HOME} element={<HomePage />} />
-        <Route path={PATH.BUTTON} element={<Button />} />
+        <Route path={PATH.BUTTON} element={<ButtonExample />} />
 
         <Route path="/*" element={<Error404 />} />
       </Routes>
