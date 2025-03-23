@@ -26,12 +26,8 @@ export const Sidebar: FC<PropsType> = ({ open, handleClose }) => {
           <NavLink to={PATH.BUTTON} onClick={handleClose} className={({ isActive }) => (isActive ? s.active : s.nav)}>
             Button
           </NavLink>
-          <NavLink
-            to={PATH.JUNIOR_PLUS}
-            onClick={handleClose}
-            className={({ isActive }) => (isActive ? s.active : s.nav)}
-          >
-            Junior Plus
+          <NavLink to={PATH.TITLE} onClick={handleClose} className={({ isActive }) => (isActive ? s.active : s.nav)}>
+            Title
           </NavLink>
         </nav>
       </aside>

@@ -16,9 +16,9 @@ export const Header = ({ handleOpen }: Props) => {
     currentPath === PATH.HOME
       ? 'Home'
       : currentPath === PATH.BUTTON
-        ? 'Button'
-        : currentPath === PATH.JUNIOR_PLUS
-          ? 'Junior Plus'
+        ? 'Button Example'
+        : currentPath === PATH.TITLE
+          ? 'Title Example'
           : 'Error'
   return (
     <>
