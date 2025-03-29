@@ -1,5 +1,5 @@
 import s from './Error404.module.css'
-import error404 from '@/assets/icons/icons-origin/404.svg'
+import error404 from '@/assets/images/icons-origin/404.svg'
 
 export const Error404 = () => {
   return (

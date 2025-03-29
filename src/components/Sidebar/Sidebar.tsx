@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { NavLink } from 'react-router'
 import s from './Sidebar.module.css'
 import { PATH } from '../../routes/Pages'
-import { IconClose } from '@/assets/icons/components'
+import { IconClose } from '@/components/Icons'
 
 type PropsType = {
   open: boolean
